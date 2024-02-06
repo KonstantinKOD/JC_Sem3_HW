@@ -2,12 +2,13 @@ package tasks;
 
 import java.util.Comparator;
 
-public class Employee implements Comparable<Employee>{
+public class Employee implements Comparable<Employee> {
     private String firstname;
     private int age;
     private String post;
     private String phoneNumber;
     private double salary;
+
     public Employee(String firstname, int age, String post, String phoneNumber, double salary) {
         this.firstname = firstname;
 
@@ -38,6 +39,10 @@ public class Employee implements Comparable<Employee>{
         return salary;
     }
 
+    public String getFirstname() {
+        return firstname;
+    }
+
     public String getPost() {
         return post;
     }
@@ -48,8 +53,7 @@ public class Employee implements Comparable<Employee>{
 
     @Override
     public int compareTo(Employee o) {
-        int res =
-
-
+        int res = this.getPost().compareTo(o.getFirstname());
+        return res;
     }
 }

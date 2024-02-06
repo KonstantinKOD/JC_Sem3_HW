@@ -9,10 +9,11 @@ public class Main {
                 new Employee("Bob", 50, "IceCreamMan", "12345678901", 345),
                 new Employee("Victor", 25, "Programmer", "12345678901", 456),
                 new Employee("Hanna", 47, "Developer", "12345678901", 567),
-                new Employee("Lizzy", 70, "Tester", "12345678901", 678)};
+                new Employee("Lizzy", 70, "Tester", "12345678901", 678),
+                new Director("Nataha", 57, "Директор", "899912334512", 6500)};
 
         System.out.println(Arrays.toString(employees));
-        EmployeeUtils.upSalary(employees);
+        Director.upSalary(employees);
         System.out.println(Arrays.toString(employees));
     }
 
